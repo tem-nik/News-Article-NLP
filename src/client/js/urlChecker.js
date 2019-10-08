@@ -1,7 +1,7 @@
-function checkURL(inputText) {
+function checkURL(formText) {
     let urlRGEX = /^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$/gm;
-    if (urlRGEX.test(inputText)) {
-        thisisFunc(formText);
+    if (urlRGEX.test(formText)) {
+        return
     } else {
         alert("please enter a valid url");
     }

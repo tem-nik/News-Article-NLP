@@ -31,6 +31,7 @@ app.get('/', function (req, res) {
 
 app.post('/test', function (request, response) {
     let nameURL = request.body.input.url;
+    console.log(request.body.input.url);
     textapi.sentiment({
         url: `${nameURL}`
     }, function (error, response) {

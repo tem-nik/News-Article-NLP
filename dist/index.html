@@ -47,7 +47,7 @@
         </section>
         <section class="analysis" id="analysis">
             <div class="form__wrapper">
-                <form class="analysis__form" onsubmit="Client.handleSubmit(event)">
+                <form class="analysis__form" onsubmit="handleSubmit(event)">
                     <input id="name" type="text" name="input[url]" placeholder="please enter URL">
                     <input id="submit" type="submit" value="submit">
                 </form>
@@ -89,7 +89,7 @@
         <p>Text and data analysis provided by <a href="https://aylien.com" target="_blank">Aylien</a></p>
     </footer>
 
-    <script>
+    <!-- <script>
         // Check that service workers are supported
         if ('serviceWorker' in navigator) {
             // Use the window load event to keep the page load performant
@@ -97,7 +97,7 @@
                 navigator.serviceWorker.register('/service-worker.js');
             });
         }
-    </script>
-</body>
+    </script> -->
+<script type="text/javascript" src="main.js"></script></body>
 
 </html>

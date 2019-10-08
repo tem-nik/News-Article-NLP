@@ -7,10 +7,8 @@ const WorkboxPlugin = require('workbox-webpack-plugin');
 module.exports = {
   entry: './src/client/index.js',
   devtool: 'source-map',
-  mode: "development",
-  devServer: {
-    port: 5500
-  },
+  mode: "production",
+  watch: true,
   module: {
     rules: [
       {

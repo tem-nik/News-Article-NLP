@@ -8,8 +8,9 @@ module.exports = {
     entry: './src/client/index.js',
     devtool: 'source-map',
     mode: "development",
+    watch: true,
     devServer: {
-        port: 5500
+        port: 3000,
     },
     module: {
         rules: [
@@ -32,7 +33,8 @@ module.exports = {
     },
     output: {
         libraryTarget: 'var',
-        library: 'Client'
+        library: 'Client',
+        path: path.resolve(__dirname, 'dist')
     },
 
     plugins: [
