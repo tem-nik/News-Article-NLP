@@ -1,0 +1,57 @@
+$primary-color: #ff6986;
+$secondary-color: #67fce1;
+$color-light: #fff;
+$color-dark: #000;
+
+.hero {
+  align-items: center;
+  background-color: rgba(255, 105, 134, 0.7);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+
+  .hero__about {
+    width: 70vw;
+  }
+
+  .hero__image {
+    background: url('../views/img/bg_image.jpg') repeat center center/cover;
+    height: 100%;
+    width: 30vw;
+  }
+
+  .hero__about {
+    color: $color-dark;
+    margin: 0 3rem;
+    padding: 3rem;
+   
+
+    .about__heading {
+      color: $color-dark;
+      font-size: 4rem;
+      font-weight: bold;
+      margin: 2rem 0;
+      padding-top: 3rem;
+      text-transform: uppercase;
+      span {
+        background-color: $secondary-color;
+      }
+    }
+    .about__title {
+      color: $color-dark;
+      font-size: 1.6rem;
+      margin: 2rem 0;
+      padding-bottom: 3rem;
+      text-decoration: underline;
+      text-transform: uppercase;
+      
+      
+    }
+    .about__text {
+      line-height: 1.6;
+      font-size: 1rem;
+      text-align: left;
+    }
+  }
+}

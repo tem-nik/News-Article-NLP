@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Test</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="navbar__logo">
+            </div>
+            <ul class="navbar__list">
+                <li class="list__item"><a class="item__link" href="#hero">About</a></li>
+                <li class="list__item"><a class="item__link" href="#analysis">Get Analysis</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero" id="hero">
+            <div class="hero__about">
+                <h1 class="about__heading"><span>Sentiment Analysis</span></h1>
+                <h2 class="about__title">Analyze the Sentiment of Reviews or Articles</h2>
+                <p class="about__text">
+                    As more and more content is created and shared online through Social Channels, Blogs, Review Sites
+                    etc. the need and desire for businesses to mine this information, in order to gain business insight
+                    from it, has also increased.
+                </p>
+                <br>
+
+                <p class="about__text">Extracting sentiment
+                    from a review or an article
+                    can provide us with valuable insight about the author's emotions and perspective:
+                    whether the tone
+                    is positive, neutral or negative, and whether the text is subjective (meaning it's reflecting
+                    the
+                    author's opinion) or objective (meaning it's expressing a fact). Simply put in the url below, and
+                    detect sentiment of a document in terms of polarity (positive or negative) and subjectivity
+                    (subjective or objective).</p>
+            </div>
+            <div class="hero__image"></div>
+        </section>
+        <section class="analysis" id="analysis">
+            <div class="form__wrapper">
+                <form class="analysis__form" action="http://localhost:5501/test" method="POST">
+                    <input id="name" type="text" name="input[url]" placeholder="please enter URL">
+                    <input id="submit" type="submit" value="submit" onclick="return handleSubmit(event)"
+                        onsubmit="return handleSubmit(event)">
+                </form>
+
+                <div class="results" id="results">
+                    <h2 class="results__heading"> Results
+                    </h2>
+                    <div class="results__cards">
+                        <div class="results__card">
+                            <h3>Polarity</h3>
+                            <div class="polarity"></div>
+                        </div>
+
+                        <div class="results__card">
+                            <h3>Subjectivity</h3>
+                            <div class="subjectivity"></div>
+                        </div>
+
+                        <div class="results__card">
+                            <h3>Polarity Confidence</h3>
+                            <div class=" polarity_confidence"></div>
+                        </div>
+
+                        <div class="results__card">
+                            <h3>Subjectivity Confidence</h3>
+                            <div class=" 
+                            subjectivity_confidence"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Text and data analysis provided by <a href="https://aylien.com" target="_blank">Aylien</a></p>
+    </footer>
+
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
+</body>
+
+</html>
