@@ -1,16 +1,22 @@
-# Project Title
+# Sentiment Analysis Website
 
-News Article/ Blog Sentiment Analysis with Natural Language Processing. This is project #4 - part of my **Udacity Front-End Development Nanodegree**. The website allows user to type in any url containing an article or a blog, and with the help of Aylien API analyse the sentiment of it through getting insight about the author's emotions and perspective.
+## Project Four - News Article NLP (Front End Developer Udacity Nanodegree)
+#### What I used: HTML, CSS, Javascript (Vanilla)
+
+### Project Objective
+
+To build a News Article/ Blog Sentiment Analysis website using Natural Language Processing API. This is project #4 - part of my **Udacity Front-End Development Nanodegree**. The website allows user to type in any url containing an article or a blog, and with the help of Aylien API analyse the sentiment of it through getting insight about the author's emotions and perspective.
+
+### Building
 
 The goal of this project was to practice with:
+
 - Setting up Webpack
 - Sass styles
 - Webpack Loaders and Plugins
 - Creating layouts and page design
 - Service workers
 - Using APIs and creating requests to external urls
-
-## Getting started
 
 This was my setup to get the project up and running.
 1. installed **npm packages**
@@ -26,5 +32,7 @@ This was my setup to get the project up and running.
 1. intalled **Aylien SDK **
 1. set up **service workers**
 
-## Running the tests
+### Running the tests
 Installed JEST and created two tests on ./src/js files to check input validation funcionality and async function.
+
+### Result 
