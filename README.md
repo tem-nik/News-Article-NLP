@@ -1,7 +1,7 @@
 # Sentiment Analysis Website
 
 ## Project Four - News Article NLP (Front End Developer Udacity Nanodegree)
-#### What I used: HTML, CSS, Javascript (Vanilla)
+#### Created with: HTML, CSS, Javascript (Vanilla)
 
 ### Project Objective
 
