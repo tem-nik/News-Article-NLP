@@ -33,7 +33,7 @@ This was my setup to get the project up and running.
 1. set up **service workers**
 
 ### Running the tests
-Installed JEST and created two tests on ./src/js files to check input validation funcionality and async function.
+Installed JEST and created two tests on ./src/js files to check input validation functionality and async function.
 
 ### Result 
 ![About Page](https://github.com/tem-nik/Project-Previews/blob/master/News-Article-About.png)
