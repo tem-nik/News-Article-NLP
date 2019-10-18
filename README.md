@@ -5,7 +5,7 @@
 
 ### Project Objective
 
-To build a News Article/ Blog Sentiment Analysis website using Natural Language Processing API. This is project #4 - part of my **Udacity Front-End Development Nanodegree**. The website allows user to type in any url containing an article or a blog, and with the help of Aylien API analyse the sentiment of it through getting insight about the author's emotions and perspective.
+To build a News Article/ Blog Sentiment Analysis website using Natural Language Processing API. The website allows user to type in any url containing an article or a blog, and with the help of Aylien API analyse the sentiment of it through getting insight about the author's emotions and perspective.
 
 ### Building
 
